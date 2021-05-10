@@ -83,14 +83,14 @@ step6-bot-translate.py
 
 # More info
 
-- Translation service: http://bit.ly/translationapitest
-- Awesome Webex resources: http://cs.co/awesomewebex
+- Translation service: [Kiara Translation API v2](https://rapidapi.com/kiara-inc-kiara-inc-default/api/kiara-translate-v2/pricing)
 - Code used in this session: https://github.com/DJF3/webex-teams-bot-session
-- Learning Labs: https://learninglabs.cisco.com 
 
-- DevNet – Collab Dev Center  https://developer.cisco.com/site/collaboration/
-- DevNet - Webex Teams  https://developer.cisco.com/webex-teams/
-- DevNet – Exchange  https://developer.cisco.com/exchange/
+**Webex Developer News**
+http://cs.co/webexdevlink 
+
+**The ultimate Webex Developer Resources**
+http://cs.co/webexdevinfo
 
 
 
