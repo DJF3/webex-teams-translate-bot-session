@@ -16,9 +16,9 @@ app = Flask(__name__)
 
 # function to translate 'text' into destination language 'lang'
 def translate(lang, text):
-    url = "https://kiara-translate.p.rapidapi.com/get_translated/"
-    payload = '{ "input": "'+text+'", "lang": "'+lang+'"}'
-    headers = { 'x-rapidapi-host': "kiara-translate.p.rapidapi.com", 'x-rapidapi-key': TRANSLATE_TOKEN, \
+    url = "https://kiara-translate-v2.p.rapidapi.com/v2/translate"
+    payload = '{ "inputText": "'+text+'", "targetLanguage": "'+lang+'"}'
+    headers = { 'x-rapidapi-host': "kiara-translate-v2.p.rapidapi.com", 'x-rapidapi-key': TRANSLATE_TOKEN, \
     'content-type': "application/json", 'accept': "application/json"}
     response = requests.request("POST", url, data=payload.encode('utf-8'), headers=headers)
     print(response.text)
@@ -51,8 +51,8 @@ def webhook():
         if my_language in ('nl', 'de', 'en', 'fr', 'es'):
             # translate my_text to the destination language my_language
             my_translation = translate(my_language,my_text)
-            # json data with translation returned - extract 'translated'
-            my_translation = json.loads(my_translation)['translated']
+            # json data with translation returned - extract 'translatedText'
+            my_translation = json.loads(my_translation)['translatedText']
             print(">> TRANSLATION: " + str(my_translation))
             # send translated message back to the user
             api.messages.create(toPersonId=message.personId, markdown=my_translation)
