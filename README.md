@@ -1,9 +1,9 @@
-# webex-teams-bot-session
-Code used in session for Cisco Partners. Topic: Webex Teams bots in Python.
+# webex-bot-session
+Code used in session for Cisco Partners. Topic: Webex bots in Python.
 
 
 # Requirements
-- Webex Teams account [free](https://www.webex.com/team-collaboration.html) 
+- Webex Message account [free](https://www.webex.com/team-collaboration.html) 
 - Python 3.x [download](https://www.python.org/downloads/)
 - Ngrok [download](https://ngrok.com/download)
 - Libraries (webexteamssdk, requests, flask) (see below)
@@ -22,7 +22,7 @@ Code used in session for Cisco Partners. Topic: Webex Teams bots in Python.
 
 # GOAL
 
-Create a Webex Teams Bot that translates text from a detected language to a configured destination language.
+Create a Webex Bot that translates text from a detected language to a configured destination language.
 Format:
 > \<countrycode\> \<text_to_translate\>
 
@@ -48,21 +48,21 @@ step1-webserver.py
 
 ## 2. Send Webex Teams Message
 
-Using the Webex Teams SDK - send message to Webex Teams user:
+Using the Webex SDK - send message to Webex user:
 
 step2-send-webexteams-message.py
 
 
 ## 3. Create Webhook
 
-Using the Webex Teams SDK - create a webhook for the bot:
+Using the Webex SDK - create a webhook for the bot:
 
 step3-create-webhook.py
 
 
 ## 4. Bot: get message text
 
-UGet the actual message text: 
+Get the actual message text: 
 
 step4-bot-get-message.py
 
