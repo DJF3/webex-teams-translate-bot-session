@@ -7,7 +7,7 @@ Code used in session for Cisco Partners. Topic: Webex bots in Python.
 - Python 3.x [download](https://www.python.org/downloads/)
 - Ngrok [download](https://ngrok.com/download)
 - Libraries (webexteamssdk, requests, flask) (see below)
-- Kiara translate account via RapidAPI [link](https://rapidapi.com/jenio-inc-jenio-inc-default/api/kiara-translate/pricing)
+- Kiara translate account via RapidAPI [link](https://rapidapi.com/kiara-inc-kiara-inc-default/api/kiara-translate-v2/pricing)
 
 
 # Install libraries
